@@ -1,14 +1,20 @@
 // expose.js
 
-window.addEventListener('DOMContentLoaded', init);
+//window.addEventListener('DOMContentLoaded', init);
 
 // init is used to define variables after DOM loads
+
 function init() {
-  let expose = document.getElementsByClassName("expose");
-  let hornSelection = expose.getElementById("hornSelect");
-  let image = expose.querySelector("[type='img']");
-  let playButton = expose.querySelector("[type='button']");
-  let audio = expose.querySelector("[type='audio']");
+  var expose = document.getElementsByClassName("expose");
+  console.log(expose);
+  var hornSelection = document.getElementById("hornSelect");
+  console.log("Horn Selection:" + hornSelection);
+  var image = document.querySelector("[type='img']");
+  console.log("image:" + image);
+  var playButton = document.querySelector("[type='button']");
+  console.log("playButton:" + playButton);
+  var audio = document.querySelector("[type='audio']");
+  console.log("audio:" + audio);
 }
 
 //Horn Selection Changed
@@ -17,7 +23,7 @@ hornSelection.addEventListener('change', function(selection) {
   switch (selection.target.value) {
     case 'air-horn':
       changeImage(image, assets/images/air-horn.svg); 
-      changeAudio(audio, assets/assets/air-horn.mp3); 
+      changeAudio(audio, assets/assets/air-horn.mp3);
       break;
     case 'car-horn':
       changeImage(image, assets/images/car-horn.svg);
