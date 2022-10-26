@@ -6,19 +6,23 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
   var expose = document.getElementsByClassName("expose");
-  console.log(expose);
+  console.log(expose);        // DELETE ME |||||||||||||||||||||||||||||||||||||||||||
   var hornSelection = document.getElementById("horn-select");
   console.log("Horn Selection:" + hornSelection);
   var image = document.querySelector("[type='img']");
-  console.log("image:" + image);
+  console.log("image:" + image);        // DELETE ME |||||||||||||||||||||||||||||||||||||||||||
   var playButton = document.querySelector("[type='button']");
-  console.log("playButton:" + playButton);
+  console.log("playButton:" + playButton);      // DELETE ME |||||||||||||||||||||||||||||||||||||||||||
   var audio = document.querySelector("[type='audio']");
-  console.log("audio:" + audio);
+  console.log("audio:" + audio);      // DELETE ME |||||||||||||||||||||||||||||||||||||||||||
+
+  // Event Listeners
+  hornSelection.addEventListener('change', hornChangeEvent(selection));
+  playButton.addEventListener('click', clickPlayButton());
 }
 
 //Horn Selection Changed
-hornSelection.addEventListener('change', function(selection) {
+function hornChangeEvent(selection) {
   // Change Image & Audio Based on Selection Value
   switch (selection.target.value) {
     case 'air-horn':
@@ -36,7 +40,7 @@ hornSelection.addEventListener('change', function(selection) {
     default:
       return;
   }
-})
+}
 
 // Change Image Source
 function changeImage(img, source) {
@@ -49,8 +53,8 @@ function changeAudio(aux, source) {
 }
 
 // Play Button is Clicked
-playButton.addEventListener('click', function() {
+function clickPlayButton() {
 
   // code to run when the event is triggered
 
-}) 
+}
