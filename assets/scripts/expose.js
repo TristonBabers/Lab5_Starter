@@ -1,6 +1,6 @@
 // expose.js
 
-// window.addEventListener('DOMContentLoaded', init);
+window.addEventListener('DOMContentLoaded', init);
 
 // init is used to define variables after DOM loads
 
