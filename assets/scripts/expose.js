@@ -1,13 +1,13 @@
 // expose.js
 
-//window.addEventListener('DOMContentLoaded', init);
+// window.addEventListener('DOMContentLoaded', init);
 
 // init is used to define variables after DOM loads
 
 function init() {
   var expose = document.getElementsByClassName("expose");
   console.log(expose);
-  var hornSelection = document.getElementById("hornSelect");
+  var hornSelection = document.getElementById("horn-select");
   console.log("Horn Selection:" + hornSelection);
   var image = document.querySelector("[type='img']");
   console.log("image:" + image);
