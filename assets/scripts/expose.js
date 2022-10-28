@@ -27,16 +27,16 @@ function hornChangeEvent(selection) {
   // Change Image & Audio Based on Selection Value
   switch (selection.target.value) {
     case 'air-horn':
-      changeImage(image, /assets/images/air-horn.svg); 
-      changeAudio(audio, /assets/assets/air-horn.mp3);
+      changeImage(image, assets/images/air-horn.svg); 
+      changeAudio(audio, assets/assets/air-horn.mp3);
       break;
     case 'car-horn':
-      changeImage(image, /assets/images/car-horn.svg);
-      changeAudio(audio, /assets/assets/car-horn.mp3);
+      changeImage(image, assets/images/car-horn.svg);
+      changeAudio(audio, assets/assets/car-horn.mp3);
       break;
     case 'party-horn':
-      changeImage(image, /assets/images/party-horn.svg);
-      changeAudio(audio, /assets/assets/party-horn.mp3); 
+      changeImage(image, assets/images/party-horn.svg);
+      changeAudio(audio, assets/assets/party-horn.mp3); 
       break;
     default:
       return;
