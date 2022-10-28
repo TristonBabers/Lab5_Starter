@@ -8,7 +8,6 @@ var image;
 var playButton;
 var audio;
 
-
 // init is used to define variables after DOM loads
 function init() {
   //var expose = document.getElementsByClassName("expose");
