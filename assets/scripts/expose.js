@@ -2,14 +2,20 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-// init is used to define variables after DOM loads
+// Declare Globals
+var hornSelection;
+var image;
+var playButton;
+var audio;
 
+
+// init is used to define variables after DOM loads
 function init() {
   //var expose = document.getElementsByClassName("expose");
-  var hornSelection = document.getElementById("horn-select");
-  var image = document.querySelector("[type='img']");
-  var playButton = document.querySelector("[type='button']");
-  var audio = document.querySelector("[type='audio']");
+  hornSelection = document.getElementById("horn-select");
+  image = document.querySelector("[type='img']");
+  playButton = document.querySelector("[type='button']");
+  audio = document.querySelector("[type='audio']");
 
   // Event Listeners
   hornSelection.addEventListener('change', hornChangeEvent(selection));
